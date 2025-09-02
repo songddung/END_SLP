@@ -22,7 +22,7 @@ public class Yujin {
 		for (int next : adjList[node]) {
 			if (!visited[next]) {
 				dfs(next); // 재귀 호출
-			}
+			}                                                                                                                                                                                                       
 		}
 	}
 	
@@ -31,9 +31,9 @@ public class Yujin {
 		int[] queue = new int[N+1];
 		int front = 0, rear = 0;
 		
-		visited[start] = true;
+		visited[start] = true;                               
 		queue[rear++] = start;
-		
+		                                                                                                       
 		while (front < rear) {
 			int node = queue[front++];
 			sb.append(node).append(' ');
@@ -55,10 +55,10 @@ public class Yujin {
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		V = Integer.parseInt(st.nextToken());
-		
+		                  
 		// 인접리스트 초기화
 		adjList = new ArrayList[N+1];
-		for (int i = 1; i <= N; i++) {
+		for (int i = 1; i <=                                                                                                                                                                                N; i++) {
 			adjList[i] = new ArrayList<>();
 		}
 		

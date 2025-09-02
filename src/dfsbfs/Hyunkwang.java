@@ -23,7 +23,6 @@ public class Hyunkwang {
 					q.offer(next);
 				}
 			}
-			
 		}
 		
 	}
@@ -66,12 +65,10 @@ public class Hyunkwang {
 		}
 		
 		visited = new boolean[N+1];
-//		bw.write(Integer.toString(V));
 		Dfs(V, bw);
 		bw.newLine();
 		
 		visited = new boolean[N+1];
-//		bw.write(V);
 		Bfs(V, bw);
 		
 		bw.flush();
